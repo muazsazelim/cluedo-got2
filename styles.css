@@ -1,0 +1,215 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #222; /* Dark background */
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #333; /* Darker container */
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow */
+    border-radius: 10px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #eee; /* Light text */
+    transition: color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+section {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #ddd; /* Light text */
+    transition: color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+td {
+    padding: 6px;
+    border-bottom: 1px solid #555; /* Darker border */
+    transition: border-bottom 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: #fff; /* White text for first column */
+    transition: color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+select.status {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #777; /* Darker border */
+    background-color: #444; /* Darker background */
+    color: #eee; /* Light text */
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+select.status.yes {
+    background-color: #388e3c; /* Darker green */
+    color: #fff;
+}
+
+select.status.maybe {
+    background-color: #d39e00; /* Darker yellow */
+    color: #fff;
+}
+
+select.status.no {
+    background-color: #b71c1c; /* Darker red */
+    color: #fff;
+}
+
+select.player-dropdown {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #777; /* Darker border */
+    background-color: #444; /* Darker background */
+    color: #eee; /* Light text */
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+select.player-dropdown:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.player-names-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0 30px;
+    text-align: left;
+}
+
+.player-names-row label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+    transition: color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+.player-name {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    width: 120px;
+    text-align: center;
+    background-color: #555; /* Darker background */
+    color: #eee;
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease; /* Smooth transition for theme toggle */
+}
+
+/* Crossed out text */
+
+
+/* Make clickable names look like links */
+.clickable-name {
+    cursor: pointer;
+}
+
+
+.theme-button {
+    position: fixed; /* Fix button to the bottom left */
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #333; /* Light background for button */
+    color: #333; /* Dark text for button */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure button is above other elements */
+}
+
+.theme-button:hover {
+    background-color: #ddd; /* Slightly lighter on hover */
+}
+
+.light-mode {
+    background-color: #f3eee6;
+    color: #333;
+}
+
+.light-mode .container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3,
+.light-mode table, .light-mode td,
+.light-mode .player-names-row label,
+.light-mode .clickable-name {
+    color: #000;
+}
+
+.light-mode td {
+    border-bottom: 1px solid #ddd;
+}
+
+.light-mode select.status,
+.light-mode select.player-dropdown,
+.light-mode .player-name{
+    background-color: #fff;
+    color: #333;
+    border-color: #ccc;
+}
+.light-mode select.status.yes {
+    background-color: #c8f7c5;
+    color: #000;
+}
+
+.light-mode select.status.maybe {
+    background-color: #fff6b7;
+    color: #000;
+}
+
+.light-mode select.status.no {
+    background-color: #f7c5c5;
+    color: #000;
+}
+
+#footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+    color: #777373; /* Lighter gray for crossed out text */
+}
+
+.light-mode .crossed-out {
+    color: #aaa;
+}
+
+.light-mode .theme-button {
+    background-color: #eee;
+}
+
+.light-mode .theme-button:hover {
+    background-color: #555;
+}

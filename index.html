@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cluedo: Game of Thrones</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet" />
+    <style>
+        .half-sun-moon {
+          background: linear-gradient(to right, #fff 50%, #000 50%);
+          -webkit-background-clip: text;
+          color: transparent;
+          font-size: inherit; /* Use the font size of the parent */
+          line-height: 1;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cluedo: Game of Thrones</h1>
+        <h2>The Red Keep</h2>
+
+        <button id="theme-toggle" class="theme-button">
+            <span id="theme-icon" class="material-symbols-outlined half-sun-moon">dark_mode</span>
+        </button>
+
+        <section>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Players</td>
+                        <td>
+                            <select class="player-dropdown">
+                                <option value="">—</option>
+                                <option value="muaz">Muaz</option>
+                                <option value="pato">Pato</option>
+                                <option value="ammar">Ammar</option>
+                                <option value="daus">Daus</option>
+                                <option value="jimi">Jimi</option>
+                                <option value="farzad">Farzad</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="player-dropdown">
+                                <option value="">—</option>
+                                <option value="muaz">Muaz</option>
+                                <option value="pato">Pato</option>
+                                <option value="ammar">Ammar</option>
+                                <option value="daus">Daus</option>
+                                <option value="jimi">Jimi</option>
+                                <option value="farzad">Farzad</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="player-dropdown">
+                                <option value="">—</option>
+                                <option value="muaz">Muaz</option>
+                                <option value="pato">Pato</option>
+                                <option value="ammar">Ammar</option>
+                                <option value="daus">Daus</option>
+                                <option value="jimi">Jimi</option>
+                                <option value="farzad">Farzad</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="player-dropdown">
+                                <option value="">—</option>
+                                <option value="muaz">Muaz</option>
+                                <option value="pato">Pato</option>
+                                <option value="ammar">Ammar</option>
+                                <option value="daus">Daus</option>
+                                <option value="jimi">Jimi</option>
+                                <option value="farzad">Farzad</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="player-dropdown">
+                                <option value="">—</option>
+                                <option value="muaz">Muaz</option>
+                                <option value="pato">Pato</option>
+                                <option value="ammar">Ammar</option>
+                                <option value="daus">Daus</option>
+                                <option value="jimi">Jimi</option>
+                                <option value="farzad">Farzad</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <section>
+            <h3>WHO</h3>
+            <table>
+                <tbody>
+                    <tr><td><span class="clickable-name" data-name="Cersei Lannister">Cersei Lannister</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Tyrion Lannister">Tyrion Lannister</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Jaime Lannister">Jaime Lannister</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Margaery Tyrell">Margaery Tyrell</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Petyr Baelish">Petyr Baelish</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Sansa Stark">Sansa Stark</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <section>
+            <h3>WHERE</h3>
+            <table>
+                <tbody>
+                    <tr><td><span class="clickable-name" data-name="Small Council Chamber">Small Council Chamber</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Qyburn’s Laboratory">Qyburn’s Laboratory</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Tower of the Hand">Tower of the Hand</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Kingsguard Chambers">Kingsguard Chambers</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Prison Cells">Prison Cells</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Gardens">Gardens</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Pavilion">Pavilion</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="King Tommen’s Bedchambers">King Tommen’s Bedchambers</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Grand Maester">Grand Maester</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Pycelle’s Lab">Pycelle’s Lab</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Cersei’s Bedchambers">Cersei’s Bedchambers</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Sparring Yard">Sparring Yard</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <section>
+            <h3>WHAT</h3>
+            <table>
+                <tbody>
+                    <tr><td><span class="clickable-name" data-name="Poison Vial">Poison Vial</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Battle Axe">Battle Axe</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Arakh">Arakh</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Faceless Man">Faceless Man</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Crossbow">Crossbow</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                    <tr><td><span class="clickable-name" data-name="Catspaw Assassin Dagger">Catspaw Assassin Dagger</span></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td><td><select class="status"></select></td></tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
+
+</body>
+<footer>
+    <footer id="footer" style="font-weight: normal; text-align: center; font-size: 0.9em; color: #888; margin-top: 20px;">
+        muazsazelim 2025
+    </footer>
+</footer>
+</html>
